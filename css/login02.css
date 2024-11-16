@@ -44,24 +44,42 @@ input,button{
     height: auto;
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
     padding: 20px 0;
+    
+}
+
+.box-container-right{
+    width: 100%;
+    height: auto;
+    padding-top: 120px;
+    padding-left: 100px;
 }
 
 .box-right form{
-    width: 600px;
+    width: 353px;
     height: auto;
     padding: 0 10px;
     display: flex;
     flex-direction: column;
-    position: relative;
+    /* position: relative;
+    top: 120px;
+    left: 100px; */
 }
 
 form .box-input{
     width: 100%;
     height: auto;
     margin: 10px 0;
+    border-bottom: 1px solid #9747FF;
+    display: flex;
+    align-items: center;
+}
+
+form .box-input i{
+    font-size: 21px;
+    color: #616161;
 }
 
 .box-input input{
@@ -69,12 +87,19 @@ form .box-input{
     padding: 10px;
     margin-top: 3px;
     outline: none;
+    border: none;
 }
 
 .box-esqueceu-senha{
     display: flex;
-    justify-content: right;
-    margin: 10px 0 20px 0;
+    justify-content: left;
+    margin: 20px 0 30px 0;
+}
+
+.box-esqueceu-senha a{
+    color: #616161;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .box-buttons{
@@ -87,14 +112,15 @@ form .box-input{
     border: none;
 }
 
-.button-entrar{
-    padding: 10px 0;
-    background-color: #232F3E;
-    color: white;
-}
-
-.box-buttons .button-cadastro{
-    margin-left: 15px;
+.box-opcoes-button .button-entrar{
+    width: 115px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    color: #616161;
+    background-color: white;
+    border: 1px solid #9747FF;
+    border-radius: 11px;
+    cursor: pointer;
 }
 
 .box-line-opcoes{
@@ -117,32 +143,66 @@ form .box-input{
 
 
 .box-opcoes-button{
-    width: 100%;
+    width: 302px;
     height: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 40px;
+    justify-content: left;
 }
 
 .box-opcoes-button .button-google{
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: center;
+    justify-content: left;
+    cursor: pointer;
 }
 
 .button-google{
     padding: 10px 20px;
 }
 
+.box-opcoes-button .button-cadastro{
+  width: 302px;
+  padding: 15px 20px 15px 60px;
+  background-color: #232F3E;
+  color: white;
+  border: none;
+  margin: 20px 0;
+  text-align: left;
+  cursor: pointer;
+}
+
+
 .button-google img{
     margin-right: 10px;
 }
 
-@media screen and (max-height:434px){
+.box-bottom-nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.box-bottom-nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.box-bottom-nav ul li{
+    margin: 0 20px;
+}
+
+.box-bottom-nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: #616161;
+}
+
+@media screen and (max-height:623px){
     .login .box-left{
-        height: 440px;
+        height: 623px;
     }
 }
 
@@ -171,6 +231,11 @@ form .box-input{
         display: flex;
         align-items: none;
         justify-content: none;
+    }
+
+    .box-container-right{
+        padding-top: 0;
+        padding-left: 0;
     }
     
     .box-right form{
