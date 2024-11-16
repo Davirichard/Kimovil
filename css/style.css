@@ -193,13 +193,35 @@ form .box-input{
 }
 
 @media screen and (max-width:450px){
-
     .box-left img{
         width: 350px;
+    }
+
+    .box-left .slogan{
+        text-align: center;
     }
 }
 
 @media screen and (max-width:350px){
+
+    .box-left img{
+        width: 300px;
+    }
+
+    
+    .box-left .slogan{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:300px){
+
+    .box-left img{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:250px){
 
     .box-left img{
         width: 100%;
