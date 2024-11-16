@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arimo", sans-serif;
+}
+
+
+/*Configuração inputs e button*/
+
+input,button{
+    border-radius: 10px;
+}
+
+.login{
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+}
+
+.login .box-left{
+    width: 50%;
+    height: 100vh;
+    min-height: auto;
+    background: rgb(217,217,217);
+    background: linear-gradient(0deg, rgba(217,217,217,1) 0%, rgba(236,236,236,1) 50%, rgba(255,255,255,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-left .slogan{
+    color: #616161;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.box-right{
+    width: 50%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.box-right form{
+    width: 600px;
+    height: auto;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+form .box-input{
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.box-input input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 3px;
+    outline: none;
+}
+
+.box-esqueceu-senha{
+    display: flex;
+    justify-content: right;
+    margin: 10px 0 20px 0;
+}
+
+.box-buttons{
+    width: 100%;
+    display: flex;
+}
+
+.box-buttons button{
+    width: 50%;
+    border: none;
+}
+
+.button-entrar{
+    padding: 10px 0;
+    background-color: #232F3E;
+    color: white;
+}
+
+.box-buttons .button-cadastro{
+    margin-left: 15px;
+}
+
+.box-line-opcoes{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.box-line-opcoes .line{
+    width: 50%;
+    height: 1px;
+    margin: 10px;
+    background-color: #616161;
+}
+
+.box-line-opcoes span{
+    width: 223px;
+    text-align: center;
+}
+
+
+.box-opcoes-button{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.box-opcoes-button .button-google{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.button-google{
+    padding: 10px 20px;
+}
+
+.button-google img{
+    margin-right: 10px;
+}
+
+/* @media screen and (min-height:720px){
+    .login{
+        min-height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+    }
+} */
+
+
+@media screen and (max-width:870px){
+    .login{
+        min-height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+    .login .box-left{
+        width: 100%;
+        height: auto;
+        padding: 40px;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+    
+    .box-right{
+        width: 100%;
+        min-height: auto;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: none;
+        justify-content: none;
+    }
+    
+    .box-right form{
+        width: 100%;
+        height: auto;
+        padding: 0 0 20px 0;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    .box-left img{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width:450px){
+
+    .box-left img{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:350px){
+
+    .box-left img{
+        width: 100%;
+    }
+}
